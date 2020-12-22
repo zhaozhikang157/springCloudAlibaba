@@ -1,0 +1,22 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.226.128:8848
+        group: dubbo
+
+dubbo:
+  registry:
+    address: nacos://192.168.226.128:8848
+  scan:
+    base-packages: cloudH.dubbo.api.service
+  protocol:
+    name: dubbo
+    port: 20888
+  consumer:
+    check: false  #检查是否依赖服务
+  application:
+    name: dubbo-service1
+    qos-enable: false  #dubbo 服务是否开启
+  cloud:
+    subscribed-services: ''#订阅服务,不配置默认订阅注册中心所有服务

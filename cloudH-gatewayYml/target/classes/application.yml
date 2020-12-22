@@ -1,0 +1,13 @@
+server:
+  port: 8099
+
+spring:
+  application:
+    name: gatewayYml
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8085/eureka/

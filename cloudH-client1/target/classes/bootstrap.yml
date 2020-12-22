@@ -1,0 +1,12 @@
+#spring:
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 192.168.226.128:8848
+#        namespace: 3c859cc0-4a66-4afa-977c-e55051951bc3
+#        group: client
+#
+#    sentinel:
+#      transport:
+#        dashboard: http://192.168.226.128:9999
+#        port: 8719

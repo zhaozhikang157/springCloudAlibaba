@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.226.128:8848
+        group: dubbo
+    config:
+      server-addr: 192.168.226.128:8848
+
+dubbo:
+  registry:
+    address: nacos://192.168.226.128:8848
+  application:
+    name: dubbo-consumer
+#  cloud:
+#    subscribed-services: 'dubbo-service1'#订阅服务,不配置默认订阅注册中心所有服务

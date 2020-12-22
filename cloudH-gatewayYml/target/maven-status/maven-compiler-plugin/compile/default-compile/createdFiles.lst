@@ -1,0 +1,3 @@
+com\cloudH\config\CustomLoadBalancerClientFilter.class
+com\cloudH\config\DefaultRibbonConfig.class
+com\cloudH\GatewayYmlApplication.class

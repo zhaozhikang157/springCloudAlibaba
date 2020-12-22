@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloudH-client1" />
+        <module name="cloudH-client2" />
+        <module name="cloudH-client3" />
+        <module name="cloudH-dubbo-provider-api" />
+        <module name="cloudH-dubbo-provider-service" />
+        <module name="cloudH-eureka" />
+        <module name="cloudH-gatewayYml" />
+        <module name="cloudH.dubbo.customer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-client1" target="12" />
+      <module name="cloud-gateway" target="12" />
+      <module name="cloud-Heureka" target="1.8" />
+      <module name="cloudH-dubbo-client1" target="1.8" />
+      <module name="cloudH-dubbo-client2" target="1.8" />
+      <module name="cloudH-dubbo-provider" target="1.8" />
+      <module name="cloudH-gateWay (1)" target="1.8" />
+      <module name="cloudH-gateway2" target="1.8" />
+      <module name="cloudH-getway-yml" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

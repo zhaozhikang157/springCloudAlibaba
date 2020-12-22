@@ -1,0 +1,44 @@
+spring:
+  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 192.168.226.128:8848
+#        group: DEFAULT_GROUP
+#        namespace:
+#      config:
+#        file-extension: yml
+#        prefix: gateway
+#        server-addr: 192.168.226.128:8848
+
+#    sentinel:
+#      transport:
+#        dashboard: http://192.168.226.128:9999
+#        port: 8719
+
+
+#      gateway:
+#        routes:
+#          - id: gateway-route
+#            uri: lb://client1
+#            predicates:
+#              - Path=/client/**
+#              - Query=version, 1
+    gateway:
+      routes:
+        - id: gateway-route
+          uri: lb://client1
+          predicates:
+            - Path=/client/**
+            - name: CheckGroup
+              args:
+                version: 1
+                groupName: client
+
+        - id: gateway-route2
+          uri: lb://client2
+          predicates:
+            - Path=/client/**
+            - name: CheckGroup
+              args:
+                version: 2
+                groupName: client

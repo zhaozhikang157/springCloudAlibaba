@@ -1,0 +1,14 @@
+#spring:
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 192.168.226.128:8848
+#        group: DEFAULT_GROUP
+#        namespace:
+
+#nacos:
+#  gateway:
+#    route:
+#      config:
+#        data-id: gateway-public
+#        group: DEFAULT_GROUP
